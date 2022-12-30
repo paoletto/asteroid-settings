@@ -16,5 +16,6 @@
         <file>qml/PoweroffPage.qml</file>
         <file>qml/RebootPage.qml</file>
         <file>qml/AboutPage.qml</file>
+        <file>qml/LocationsPage.qml</file>
     </qresource>
 </RCC>

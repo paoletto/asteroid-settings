@@ -38,6 +38,7 @@ Application {
     Component { id: watchfaceLayer;  WatchfacePage  { } }
     Component { id: launcherLayer;   LauncherPage  { } }
     Component { id: usbLayer;        USBPage        { } }
+    Component { id: locationsLayer;  LocationsPage  { } }
     Component { id: poweroffLayer;   PoweroffPage   { } }
     Component { id: rebootLayer;     RebootPage     { } }
     Component { id: aboutLayer;      AboutPage      { } }
@@ -130,6 +131,12 @@ Application {
                     title: qsTrId("id-usb-page")
                     iconName: "ios-usb"
                     onClicked: layerStack.push(usbLayer)
+                }
+                ListItem {
+                    //% "Locations"
+                    title: "Locations"
+                    iconName: "ios-pin"
+                    onClicked: layerStack.push(locationsLayer)
                 }
                 ListItem {
                     //% "Power Off"
